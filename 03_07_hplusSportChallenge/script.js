@@ -18,7 +18,7 @@ fetch('https://hplussport.com/api/products?order=price')
 		
 		//Display the price of each product
 		var productPrice = jsonData[items].price;
-		var price = document.createElement("li");
+		var price = document.createElement("h6");
 		price.innerHTML = productPrice;
 		document.body.appendChild(price);
 	}
